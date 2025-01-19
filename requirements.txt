@@ -1,0 +1,9 @@
+PyQt5
+opencv-python-headless
+rasterio
+matplotlib
+numpy
+pandas
+geopy
+folium
+scikit-learn

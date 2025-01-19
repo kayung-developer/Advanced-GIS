@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_49feffce533064338ea23e5b51f8617f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_49feffce533064338ea23e5b51f8617f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_49feffce533064338ea23e5b51f8617f = L.map(
+                "map_49feffce533064338ea23e5b51f8617f",
+                {
+                    center: [7.73304, 8.54044],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7e12b6ca0d153fefb63648f2cbad56d6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7e12b6ca0d153fefb63648f2cbad56d6.addTo(map_49feffce533064338ea23e5b51f8617f);
+        
+    
+            var marker_cluster_bf290b09a960f1d9f067a1ecd72efcc8 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_fa1d184fd432e8fcf6e419f6ddb20947 = L.marker(
+                [7.7322, 8.5391],
+                {}
+            ).addTo(marker_cluster_bf290b09a960f1d9f067a1ecd72efcc8);
+        
+    
+        var popup_adca01e85655418c7ddd88fead9f3431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d52cd333461f809ae2e4c035be033b7a = $(`<div id="html_d52cd333461f809ae2e4c035be033b7a" style="width: 100.0%; height: 100.0%;">Makurdi Town Center</div>`)[0];
+                popup_adca01e85655418c7ddd88fead9f3431.setContent(html_d52cd333461f809ae2e4c035be033b7a);
+            
+        
+
+        marker_fa1d184fd432e8fcf6e419f6ddb20947.bindPopup(popup_adca01e85655418c7ddd88fead9f3431)
+        ;
+
+        
+    
+    
+            var marker_97b720370132b0bd08e3d86379f8c605 = L.marker(
+                [7.7305, 8.5501],
+                {}
+            ).addTo(marker_cluster_bf290b09a960f1d9f067a1ecd72efcc8);
+        
+    
+        var popup_3cd7467682dd8395f9a09e2de436e718 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2916a2a00c27d7cd7e94fd069db9b029 = $(`<div id="html_2916a2a00c27d7cd7e94fd069db9b029" style="width: 100.0%; height: 100.0%;">Benue State University</div>`)[0];
+                popup_3cd7467682dd8395f9a09e2de436e718.setContent(html_2916a2a00c27d7cd7e94fd069db9b029);
+            
+        
+
+        marker_97b720370132b0bd08e3d86379f8c605.bindPopup(popup_3cd7467682dd8395f9a09e2de436e718)
+        ;
+
+        
+    
+    
+            var marker_67da0b61ec7956f8b1750c8cf28546d7 = L.marker(
+                [7.725, 8.531],
+                {}
+            ).addTo(marker_cluster_bf290b09a960f1d9f067a1ecd72efcc8);
+        
+    
+        var popup_4cff97e4c0e39e0a94b3dabb638c0dae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a390f86835fa452a181bc8dfc5527c92 = $(`<div id="html_a390f86835fa452a181bc8dfc5527c92" style="width: 100.0%; height: 100.0%;">Wurukum Market</div>`)[0];
+                popup_4cff97e4c0e39e0a94b3dabb638c0dae.setContent(html_a390f86835fa452a181bc8dfc5527c92);
+            
+        
+
+        marker_67da0b61ec7956f8b1750c8cf28546d7.bindPopup(popup_4cff97e4c0e39e0a94b3dabb638c0dae)
+        ;
+
+        
+    
+    
+            var marker_047a33acfb5453149ea08a328745a326 = L.marker(
+                [7.7375, 8.557],
+                {}
+            ).addTo(marker_cluster_bf290b09a960f1d9f067a1ecd72efcc8);
+        
+    
+        var popup_cd633dcc37df27d2208cf7c2ef1c2aaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f68ddbf69e6b8a48ea875daa402eb208 = $(`<div id="html_f68ddbf69e6b8a48ea875daa402eb208" style="width: 100.0%; height: 100.0%;">Federal Medical Center</div>`)[0];
+                popup_cd633dcc37df27d2208cf7c2ef1c2aaa.setContent(html_f68ddbf69e6b8a48ea875daa402eb208);
+            
+        
+
+        marker_047a33acfb5453149ea08a328745a326.bindPopup(popup_cd633dcc37df27d2208cf7c2ef1c2aaa)
+        ;
+
+        
+    
+    
+            var marker_548bccedf37c56503e93ef52925c8004 = L.marker(
+                [7.74, 8.525],
+                {}
+            ).addTo(marker_cluster_bf290b09a960f1d9f067a1ecd72efcc8);
+        
+    
+        var popup_b91655359c48af108b047701ec5597c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64a54f74534dcbe0032514e5c89e1e05 = $(`<div id="html_64a54f74534dcbe0032514e5c89e1e05" style="width: 100.0%; height: 100.0%;">Aper Aku Stadium</div>`)[0];
+                popup_b91655359c48af108b047701ec5597c0.setContent(html_64a54f74534dcbe0032514e5c89e1e05);
+            
+        
+
+        marker_548bccedf37c56503e93ef52925c8004.bindPopup(popup_b91655359c48af108b047701ec5597c0)
+        ;
+
+        
+    
+    
+            marker_cluster_bf290b09a960f1d9f067a1ecd72efcc8.addTo(map_49feffce533064338ea23e5b51f8617f);
+        
+</script>
+</html>
