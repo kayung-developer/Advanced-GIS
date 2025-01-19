@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da85460ff7ae1e8b011edeec6be90f38 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_da85460ff7ae1e8b011edeec6be90f38" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_da85460ff7ae1e8b011edeec6be90f38 = L.map(
+                "map_da85460ff7ae1e8b011edeec6be90f38",
+                {
+                    center: [7.7285, 8.601],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_42b3ef71a63c78b1793f637c62e7f9ec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_42b3ef71a63c78b1793f637c62e7f9ec.addTo(map_da85460ff7ae1e8b011edeec6be90f38);
+        
+    
+            var marker_8a52e1598970e534dcf8dd6a9b29a5a3 = L.marker(
+                [7.7285, 8.601],
+                {}
+            ).addTo(map_da85460ff7ae1e8b011edeec6be90f38);
+        
+    
+            var icon_134640d58d182d9a22a703de61d9fd52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a52e1598970e534dcf8dd6a9b29a5a3.setIcon(icon_134640d58d182d9a22a703de61d9fd52);
+        
+    
+        var popup_2501dc63549bbfce0db8580046b6ffc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae5cdf0975f0d9ac4df7c2f5f3517cd = $(`<div id="html_8ae5cdf0975f0d9ac4df7c2f5f3517cd" style="width: 100.0%; height: 100.0%;">Flood-Prone Area</div>`)[0];
+                popup_2501dc63549bbfce0db8580046b6ffc5.setContent(html_8ae5cdf0975f0d9ac4df7c2f5f3517cd);
+            
+        
+
+        marker_8a52e1598970e534dcf8dd6a9b29a5a3.bindPopup(popup_2501dc63549bbfce0db8580046b6ffc5)
+        ;
+
+        
+    
+    
+            var marker_71bec81139f80ca7c1cbf0f5852fe2c1 = L.marker(
+                [7.73, 8.602],
+                {}
+            ).addTo(map_da85460ff7ae1e8b011edeec6be90f38);
+        
+    
+            var icon_4587df334efadce09e23fa92ca10f94f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_71bec81139f80ca7c1cbf0f5852fe2c1.setIcon(icon_4587df334efadce09e23fa92ca10f94f);
+        
+    
+        var popup_3889f6ea66e12f1a88e9009d58bd961d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b913fe339d568fbe72fac8347c7de836 = $(`<div id="html_b913fe339d568fbe72fac8347c7de836" style="width: 100.0%; height: 100.0%;">Healthy Crops</div>`)[0];
+                popup_3889f6ea66e12f1a88e9009d58bd961d.setContent(html_b913fe339d568fbe72fac8347c7de836);
+            
+        
+
+        marker_71bec81139f80ca7c1cbf0f5852fe2c1.bindPopup(popup_3889f6ea66e12f1a88e9009d58bd961d)
+        ;
+
+        
+    
+    
+            var marker_b2c0744538e748159de354d6a062ad27 = L.marker(
+                [7.7305, 8.603],
+                {}
+            ).addTo(map_da85460ff7ae1e8b011edeec6be90f38);
+        
+    
+            var icon_3b53c902176f0c74bbdc2b5c022a740a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2c0744538e748159de354d6a062ad27.setIcon(icon_3b53c902176f0c74bbdc2b5c022a740a);
+        
+    
+        var popup_c67ff2956a0469dd020d3c9211e9b861 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb3c3cd1bbaf8ca81d1e0d7495a9fe7 = $(`<div id="html_eeb3c3cd1bbaf8ca81d1e0d7495a9fe7" style="width: 100.0%; height: 100.0%;">Mineral-Rich Area</div>`)[0];
+                popup_c67ff2956a0469dd020d3c9211e9b861.setContent(html_eeb3c3cd1bbaf8ca81d1e0d7495a9fe7);
+            
+        
+
+        marker_b2c0744538e748159de354d6a062ad27.bindPopup(popup_c67ff2956a0469dd020d3c9211e9b861)
+        ;
+
+        
+    
+    
+            var marker_9beb5f7df69223171c68367f64787482 = L.marker(
+                [7.732, 8.604],
+                {}
+            ).addTo(map_da85460ff7ae1e8b011edeec6be90f38);
+        
+    
+            var icon_7ddc71db087b210294867056b6155b7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9beb5f7df69223171c68367f64787482.setIcon(icon_7ddc71db087b210294867056b6155b7c);
+        
+    
+        var popup_b6c1c59a77310522bc26d8359fcc56ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_419272480e2be9199873e5cf590aa6d6 = $(`<div id="html_419272480e2be9199873e5cf590aa6d6" style="width: 100.0%; height: 100.0%;">Rainy Season Detected</div>`)[0];
+                popup_b6c1c59a77310522bc26d8359fcc56ac.setContent(html_419272480e2be9199873e5cf590aa6d6);
+            
+        
+
+        marker_9beb5f7df69223171c68367f64787482.bindPopup(popup_b6c1c59a77310522bc26d8359fcc56ac)
+        ;
+
+        
+    
+    
+            var marker_5d0edd364476bfeeb5026069209ffe0c = L.marker(
+                [7.7315, 8.605],
+                {}
+            ).addTo(map_da85460ff7ae1e8b011edeec6be90f38);
+        
+    
+            var icon_f4849866aa71d1614e5871da992904af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5d0edd364476bfeeb5026069209ffe0c.setIcon(icon_f4849866aa71d1614e5871da992904af);
+        
+    
+        var popup_88df61da86cad9a56eac8f3c27215ec4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d09c738502086b0301dafe48d4af7faa = $(`<div id="html_d09c738502086b0301dafe48d4af7faa" style="width: 100.0%; height: 100.0%;">Harvest-Ready Area</div>`)[0];
+                popup_88df61da86cad9a56eac8f3c27215ec4.setContent(html_d09c738502086b0301dafe48d4af7faa);
+            
+        
+
+        marker_5d0edd364476bfeeb5026069209ffe0c.bindPopup(popup_88df61da86cad9a56eac8f3c27215ec4)
+        ;
+
+        
+    
+</script>
+</html>
