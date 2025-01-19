@@ -1,3 +1,4 @@
+![app.png](app.png)
 # Advanced GIS Application Suite
 
 Welcome to the **Advanced GIS Application Suite**, a collection of tools tailored for agricultural and environmental applications. This README file provides an overview of the app's features, installation instructions, and usage guidelines.
@@ -7,6 +8,7 @@ Welcome to the **Advanced GIS Application Suite**, a collection of tools tailore
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshot](#Screenshots)
 - [Modules Overview](#modules-overview)
 - [Contributing](#contributing)
 - [License](#license)
@@ -70,6 +72,17 @@ pip install -r requirements.txt
 2. Select the desired module from the application's tabbed interface.
 3. Follow the on-screen instructions to load data and perform analyses.
 
+---
+## Screenshot
+![crop-health.png](screenshots%2Fcrop-health.png)
+![flood.png](screenshots%2Fflood.png)
+![flood-view.png](screenshots%2Fflood-view.png)
+![live-watch.png](screenshots%2Flive-watch.png)
+![live-watch-with-data.png](screenshots%2Flive-watch-with-data.png)
+![map1.png](screenshots%2Fmap1.png)
+![maps-all.png](screenshots%2Fmaps-all.png)
+![seasons-analysis.png](screenshots%2Fseasons-analysis.png)
+![temp_dem_image.png](temp_dem_image.png)
 ---
 
 ## Modules Overview
